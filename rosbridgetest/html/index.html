@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="../css/index.css">
+<script src="../libraries/p5.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<h1 style="text-align: center;"> Dog robot simulation using Ros and fuzzy logic</h1>
+<div id ="canvas"></div>
+
+<div id ="box">
+    
+    <div id="state" style="background-color: rgb(133, 167, 55); overflow: auto;">
+            
+    
+        <p><code>/my_topic</code> messages received: <ul id="messages" style="font-weight: bold;"></ul></p>
+    </div> 
+</div>
+
+
+<div id="wrapper">Agent name: <input type="text" id="nameInput" name="name" value="">
+    
+<button  id="simulate">New agent</button>
+<button  id="continue">Start</button>
+<button  id="stop">Pause</button>
+
+<p>Connection: <span id="status" style="font-weight: bold;">N/A</span></p>
+
+</div>
+
+<p></p>
+<div>
+    <h2>Topics</h2>
+    <button  id="cmd_vel" name="cmd_vel">/cmd_vel</button>
+    <button  id="cmd_vel2" name="cmd_vel2">/cmd_vel2</button>
+</div>
+<script  src="../js/agent.js"></script>
+<script  src="../js/main.js"></script>
+
+</body>
+
+
+</html>
