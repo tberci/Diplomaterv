@@ -1,0 +1,17 @@
+﻿websocket server indítása:
+
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
+
+
+node szerver indítása:
+ 
+cd /home/user/rclnodejs-test/test2/src
+ 
+node server.js
+
+
+
+spawner node indítása:
+ 
+ros2 run my_robot_controller spawner
